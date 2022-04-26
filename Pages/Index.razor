@@ -1,0 +1,117 @@
+﻿@page "/"
+
+
+<div style="margin: 0 auto 2em; max-width: 450px; height: 430px;">
+    <SfCarousel CssClass="carousel-control">
+        @foreach (CarouselDataModel data in CarouselData)
+        {
+            <CarouselItem>
+                <div>
+                    <img style="height:250px;width:100%;"
+                         src="images/carousel/@(data.ImageName)" alt="@data.Title" />
+                    <div style="padding:1rem;">
+                        <h5>@data.Title</h5>
+                        <p>@data.Content</p>
+                    </div>
+                </div>
+            </CarouselItem>
+        }
+
+    </SfCarousel>
+    @*<SfCarousel>
+            <CarouselItem>
+                <figure class="image-container">
+                    <img src="images/carousel/san-francisco.png" alt="san-francisco"
+                         style="height:100%;width:100%;" />
+                    <figcaption class="image-caption">San Francisco</figcaption>
+                </figure>
+            </CarouselItem>
+            <CarouselItem>
+                <figure class="image-container">
+                    <img src="images/carousel/london.png" alt="london"
+                         style="height:100%;width:100%;" />
+                    <figcaption class="image-caption">London</figcaption>
+                </figure>
+            </CarouselItem>
+            <CarouselItem>
+                <figure class="image-container">
+                    <img src="images/carousel/tokyo.png" alt="tokyo"
+                         style="height:100%;width:100%;" />
+                    <figcaption class="image-caption">Tokyo</figcaption>
+                </figure>
+            </CarouselItem>
+            <CarouselItem>
+                <figure class="image-container">
+                    <img src="images/carousel/moscow.png" alt="moscow"
+                         style="height:100%;width:100%;" />
+                    <figcaption class="image-caption">Moscow</figcaption>
+                </figure>
+            </CarouselItem>
+        </SfCarousel>*@
+</div>
+
+@code {
+
+    public class CarouselDataModel {
+        public int ID { get; set; }
+        public string Title { get; set; }
+        public string ImageName { get; set; }
+        public string Content { get; set; }
+    }
+    List<CarouselDataModel> CarouselData = new List<CarouselDataModel>()
+    {
+        new CarouselDataModel {
+            ID = 1,
+            Title = "San Francisco",
+            ImageName = "san-francisco.png",
+            Content = "San Francisco, officially the City and County of San Francisco, is a cultural, commercial, and financial center in the U.S. state of California. Located in Northern California, San Francisco is the 17th most populous city proper in the United States, and the fourth most populous in California.",
+        },
+        new CarouselDataModel {
+            ID = 2,
+            Title = "London",
+            ImageName = "london.png",
+            Content = "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations.",
+        },
+        new CarouselDataModel {
+            ID = 3,
+            Title = "Tokyo",
+            ImageName = "tokyo.png",
+            Content = "Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens.",
+        },
+         new CarouselDataModel {
+            ID = 4,
+            Title = "Moscow",
+            ImageName = "moscow.png",             
+            Content = "Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital. In its historic core is the Kremlin, a complex that’s home to the president and tsarist treasures in the Armoury. Outside its walls is Red Square, Russia`s symbolic center.",
+
+        }
+    };
+
+}
+
+
+
+
+
+
+
+<style>
+
+    /* .e-carousel-items .e-carousel-item .image-container {
+        height: 100%;
+    }
+
+    .e-carousel-items .e-carousel-item .image-caption {
+        bottom: 4em;
+        color: #fff;
+        font-size: 12pt;
+        height: 2em;
+        position: relative;
+        padding: 0.3em 1em;
+        text-align: center;
+        width: 100%;
+    }*/
+    .carousel-control .e-carousel-indicators .e-indicator-bar .e-indicator div {
+        background-color: #e7e7e7;
+    }
+</style>
