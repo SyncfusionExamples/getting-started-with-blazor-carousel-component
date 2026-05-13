@@ -1,6 +1,5 @@
 # Getting Started with the Blazor Carousel Component
 
-**Repository Description**  
 This repository contains a Blazor WebAssembly sample that demonstrates how to integrate and configure the Syncfusion Blazor Carousel component to display images and content in a rotating, interactive layout.
 
 This sample explains how to add a Blazor Carousel component to a Blazor WebAssembly application and configure images and content. It also includes a code snippet that demonstrates how to bind a data source to the Carousel component.
