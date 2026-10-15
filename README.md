@@ -45,18 +45,6 @@ dotnet run
 
 4. Open the URL displayed in the console after the application starts.
 
-## Project Structure
-
-`Client/Pages/Index.razor` - Main sample page that renders the Syncfusion Carousel component, defines the `CarouselDataModel` class, creates the data collection, generates carousel items dynamically, and customizes indicator styling.
-
-`Client/wwwroot/images/carousel/san-francisco.png` - Image displayed for the San Francisco carousel item.
-
-`Client/wwwroot/images/carousel/london.png` - Image displayed for the London carousel item.
-
-`Client/wwwroot/images/carousel/tokyo.png` - Image displayed for the Tokyo carousel item.
-
-`Client/wwwroot/images/carousel/moscow.png` - Image displayed for the Moscow carousel item.
-
 ## Support and Feedback
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
