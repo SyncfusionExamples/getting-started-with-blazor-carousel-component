@@ -1,48 +1,57 @@
 # Getting Started with the Blazor Carousel Component
 
-**Repository Description**  
-This repository contains a Blazor WebAssembly sample that demonstrates how to integrate and configure the Syncfusion Blazor Carousel component to display images and content in a rotating, interactive layout.
+## Overview
 
-This sample explains how to add a Blazor Carousel component to a Blazor WebAssembly application and configure images and content. It also includes a code snippet that demonstrates how to bind a data source to the Carousel component.
+This sample demonstrates how to use the Syncfusion [Blazor Carousel](https://www.syncfusion.com/blazor-components/blazor-carousel) component in a Blazor WebAssembly application. The application showcases carousel-based presentation of images and content arranged in a rotating interface that helps users navigate featured information efficiently.
 
-## Project Overview
-The purpose of this project is to help developers get started with the Syncfusion Blazor Carousel component. It showcases how carousel items can be displayed in a rotating view, making it ideal for presenting images, banners, or featured content in a Blazor application.
+The sample also demonstrates binding a data source to carousel items, enabling developers to generate slides dynamically instead of defining every item manually. This approach is useful for banners, product showcases, announcements, image galleries, and other content-driven experiences.
 
-## Features
-- Integration of the Syncfusion Blazor Carousel component  
-- Display of images and custom content  
-- Data source binding for carousel items  
-- Interactive and responsive content rotation  
+## Key Features
 
-## Examples
-- Online demo:<br>
-https://blazor.syncfusion.com/demos/carousel/default-functionalities?theme=fluent
+- Uses the Syncfusion [Blazor Carousel](https://www.syncfusion.com/blazor-components/blazor-carousel) component to display content in a rotating Generates carousel slides dynamically using a `foreach` loop that iterates through a strongly typed `List<CarouselDataModel>` collection.
+- Demonstrates data-driven carousel item rendering with custom fields including `Title`, `ImageName`, and `Content`.
+- Displays images within carousel items using locally hosted assets from the `images/carousel` folder.
+- Combines images, headings, and descriptive text within each `CarouselItem` to create rich content slides.
+- Defines a custom `CarouselDataModel` class to represent carousel item data.
+- Binds multiple carousel items from a collection representing featured city information.
+- Applies custom styling through the `CssClass="carousel-control"` property and CSS customization of carousel indicators.
+- Demonstrates a reusable approach for populating carousel content from a data source instead of manually defining individual carousel items.
 
 ## Prerequisites
-- Visual Studio 2022  
-- .NET SDK compatible with Blazor WebAssembly  
 
-## Installation and Running the Project
-1. Check out or clone this project to a local directory.
-2. Open the solution file using Visual Studio 2022.
-3. Restore NuGet packages by rebuilding the solution.
-4. Build and run the project to view the Blazor Carousel component.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) compatible with the project's target framework
 
-## Usage
-Run the application and observe how the Carousel cycles through images or content. Modify the data source to customize carousel items and content as required.
+## How to Run the Project
 
-## Documentation
-- General Syncfusion documentation:<br>
-https://help.syncfusion.com/
-- Blazor Introduction:<br>
-https://blazor.syncfusion.com/documentation/introduction
-- Blazor Carousel Getting Started:<br>
-https://blazor.syncfusion.com/documentation/carousel/getting-started
+**Visual Studio 2022**
 
-## Troubleshooting
-- Ensure the correct .NET SDK and Visual Studio version are installed.
-- Rebuild the solution if NuGet packages fail to restore.
-- Check browser developer tools for runtime or rendering errors.
+1. Clone or download the repository.
+2. Open the `GettingStarted.sln` solution file.
+3. Restore all NuGet packages.
+4. Build the solution.
+5. Run the application using `Ctrl+F5`.
 
-## Support
-For detailed API references, configuration guidance, and advanced usage examples, refer to the Syncfusion Blazor documentation links provided above.
+**Visual Studio Code**
+
+1. Clone or download the repository.
+2. Open the repository folder in Visual Studio Code.
+3. Navigate to the repository root.
+
+```bash
+dotnet restore
+dotnet run
+```
+
+4. Open the URL displayed in the console after the application starts.
+
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- Official Carousel documentation: https://blazor.syncfusion.com/documentation/carousel/getting-started
+- Online demo: https://blazor.syncfusion.com/demos/carousel/default-functionalities
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
