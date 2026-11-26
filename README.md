@@ -20,7 +20,7 @@ The sample also demonstrates binding a data source to carousel items, enabling d
 ## Prerequisites
 
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
-- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) compatible with the project's target framework
+- [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 
 ## How to Run the Project
 
@@ -36,11 +36,11 @@ The sample also demonstrates binding a data source to carousel items, enabling d
 
 1. Clone or download the repository.
 2. Open the repository folder in Visual Studio Code.
-3. Navigate to the repository root.
+3. Navigate to the repository root and restore the packages.
 
 ```bash
 dotnet restore
-dotnet run
+dotnet run --project GettingStarted.csproj
 ```
 
 4. Open the URL displayed in the console after the application starts.
